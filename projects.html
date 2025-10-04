@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Sai sree Nathala</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Projects</h1>
+        <p class="muted">Work, research and selected code</p>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="Sai-sree-Nathala-FlowCV-Resume-20251004.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <article class="project">
+        <h2>UAV — Target Detection and Tracking</h2>
+        <p><strong>Topic:</strong> Fusion of mmWave FMCW radars and vision-based sensors (Bachelor's thesis)</p>
+        <p><strong>What I did:</strong> Installed/configured FMCW radars, RGB & thermal cameras in ROS; implemented sensor synchronization and sensor-fusion algorithms to improve detection accuracy in diverse environments.</p>
+        <p><strong>Tech:</strong> ROS, Python, sensor drivers, data synchronization</p>
+        <p><a href="#" aria-disabled="true">Repository / demos (add links here)</a></p>
+      </article>
+
+      <article class="project">
+        <h2>Vessel Type Classification — Underwater Acoustic</h2>
+        <p><strong>What I did:</strong> Designed a lightweight CNN for classifying vessel types using underwater acoustic signal data. Achieved 93.53% accuracy on the VTUAD dataset with a compact model (~19.5 MB).</p>
+        <p><strong>Tech:</strong> Python, PyTorch, signal preprocessing</p>
+        <p><a href="#" aria-disabled="true">Repository / report (add link)</a></p>
+      </article>
+
+      <article class="project">
+        <h2>Deep CNN — Hand Gesture Recognition (Thermal)</h2>
+        <p><strong>What I did:</strong> Built an end-to-end edge computing solution using a high-resolution infrared camera for robust hand gesture recognition in complex backgrounds; 99.79% accuracy.</p>
+        <p><strong>Tech:</strong> Thermal imaging, CNNs, edge deployment</p>
+        <p><a href="#" aria-disabled="true">Repository / demo (add link)</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span> Sai sree Nathala — <a href="mailto:nathala2003@gmail.com">nathala2003@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year2').innerText = new Date().getFullYear();</script>
+</body>
+</html>
