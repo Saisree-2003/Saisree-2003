@@ -1,0 +1,78 @@
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --accent:#0b5cff;
+  --muted:#666;
+  --max-width:1000px;
+  --radius:12px;
+  --gap:18px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#111;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:28px auto;
+  padding:0 18px;
+}
+
+.site-header{
+  background:transparent;
+  padding:14px 0;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.brand h1{margin:0;font-size:1.4rem}
+.brand .muted{margin:0;color:var(--muted);font-size:0.95rem}
+
+.nav{margin-left:auto;display:flex;gap:14px;align-items:center}
+.nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px}
+.nav a.active, .nav a:hover{background:rgba(11,92,255,0.08);color:var(--accent)}
+
+.menu-toggle{display:none;background:none;border:0;font-size:20px;margin-left:12px}
+
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:18px;
+  box-shadow:0 6px 18px rgba(16,24,40,0.06);
+  margin-bottom:var(--gap);
+}
+
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.hero-left h2{margin-top:0}
+.contact-list{list-style:none;padding:0;margin:0 0 12px 0}
+.contact-list li{margin-bottom:6px}
+.btn{
+  display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;margin-top:8px
+}
+.chips{display:flex;gap:8px;flex-wrap:wrap;list-style:none;padding:0;margin:8px 0 0 0}
+.chips li{border-radius:999px;padding:6px 10px;background:#f2f6ff;color:var(--accent);font-weight:600}
+
+.two-col{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media (max-width:800px){.two-col{grid-template-columns:1fr}.hero{grid-template-columns:1fr}.nav{display:none}.menu-toggle{display:block}.site-header{position:sticky;top:0;background:var(--bg);z-index:20;padding:10px 0}}
+
+.projects-list{list-style:none;padding:0;margin:0}
+.projects-list li{margin-bottom:14px}
+
+.muted{color:var(--muted);font-size:0.95rem}
+
+/* footer */
+.site-footer{padding:20px 0;color:var(--muted);text-align:center;font-size:0.95rem}
+
+/* small utilities */
+a[aria-disabled="true"]{opacity:0.6;pointer-events:none}
+
+/* nav-open toggler for mobile */
+body.nav-open .nav{display:flex;position:fixed;inset:60px 12px 12px 12px;background:var(--card);border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.12);flex-direction:column;padding:12px}
