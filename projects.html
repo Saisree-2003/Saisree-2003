@@ -3,21 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Projects — Sai sree Nathala</title>
+  <title>Research Projects — Sai sree Nathala</title>
   <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="Research projects in deep learning, computer vision, signal processing, and data science by Sai sree Nathala." />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <h1>Projects</h1>
-        <p class="muted">Work, research and selected code</p>
+        <h1>Research Projects</h1>
+        <p class="muted">Deep Learning • Computer Vision • Signal Processing</p>
       </div>
 
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="projects.html" class="active">Projects</a>
-        <a href="Sai-sree-Nathala-FlowCV-Resume-20251004.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        <a href="visualizations.html">Data Science</a>
+        <a href="Sai_sree_resume.pdf" target="_blank" rel="noopener">Resume</a>
       </nav>
 
       <button class="menu-toggle" aria-label="Toggle menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
@@ -26,36 +28,176 @@
 
   <main class="container">
     <section class="card">
-      <article class="project">
-        <h2>UAV — Target Detection and Tracking</h2>
-        <p><strong>Topic:</strong> Fusion of mmWave FMCW radars and vision-based sensors (Bachelor's thesis)</p>
-        <p><strong>What I did:</strong> Installed/configured FMCW radars, RGB & thermal cameras in ROS; implemented sensor synchronization and sensor-fusion algorithms to improve detection accuracy in diverse environments.</p>
-        <p><strong>Tech:</strong> ROS, Python, sensor drivers, data synchronization</p>
-        <p><a href="#" aria-disabled="true">Repository / demos (add links here)</a></p>
-      </article>
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <article class="project-detail">
+          <div class="project-header">
+            <h2>UAV Target Detection and Tracking</h2>
+            <span class="project-type">Bachelor's Thesis</span>
+          </div>
+          <p class="project-subtitle">Fusion of mmWave FMCW Radars and Vision-based Sensors</p>
+          
+          <div class="project-content">
+            <div class="project-description">
+              <h4>Overview</h4>
+              <p>Developed a robust multi-sensor fusion system for autonomous drone applications, integrating mmWave FMCW radars with RGB and thermal cameras to enhance target detection accuracy and reliability in diverse environmental conditions.</p>
+              
+              <h4>Key Contributions</h4>
+              <ul>
+                <li>Led hardware installation and configuration of FMCW mmWave radars, RGB, and thermal cameras within ROS framework</li>
+                <li>Implemented synchronized data acquisition from multiple sensors for real-time processing</li>
+                <li>Designed and developed sensor fusion algorithms to combine radar and camera data</li>
+                <li>Achieved dynamic adaptability for improved detection in varying environmental scenarios</li>
+              </ul>
 
-      <article class="project">
-        <h2>Vessel Type Classification — Underwater Acoustic</h2>
-        <p><strong>What I did:</strong> Designed a lightweight CNN for classifying vessel types using underwater acoustic signal data. Achieved 93.53% accuracy on the VTUAD dataset with a compact model (~19.5 MB).</p>
-        <p><strong>Tech:</strong> Python, PyTorch, signal preprocessing</p>
-        <p><a href="#" aria-disabled="true">Repository / report (add link)</a></p>
-      </article>
+              <h4>Technologies Used</h4>
+              <div class="tech-stack">
+                <span class="tech-tag large">ROS (Robot Operating System)</span>
+                <span class="tech-tag large">Python</span>
+                <span class="tech-tag large">OpenCV</span>
+                <span class="tech-tag large">Sensor Fusion</span>
+                <span class="tech-tag large">Computer Vision</span>
+                <span class="tech-tag large">mmWave Radar</span>
+              </div>
+            </div>
+            
+            <div class="project-meta">
+              <div class="meta-card">
+                <h4>Project Details</h4>
+                <p><strong>Duration:</strong> 6 months</p>
+                <p><strong>Status:</strong> Completed</p>
+                <p><strong>Category:</strong> Computer Vision, Robotics</p>
+              </div>
+              
+              <div class="achievement-card">
+                <h4>Achievements</h4>
+                <ul>
+                  <li>Successful multi-sensor synchronization</li>
+                  <li>Enhanced detection reliability</li>
+                  <li>ROS-based implementation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
 
-      <article class="project">
-        <h2>Deep CNN — Hand Gesture Recognition (Thermal)</h2>
-        <p><strong>What I did:</strong> Built an end-to-end edge computing solution using a high-resolution infrared camera for robust hand gesture recognition in complex backgrounds; 99.79% accuracy.</p>
-        <p><strong>Tech:</strong> Thermal imaging, CNNs, edge deployment</p>
-        <p><a href="#" aria-disabled="true">Repository / demo (add link)</a></p>
-      </article>
+        <!-- Project 2 -->
+        <article class="project-detail">
+          <div class="project-header">
+            <h2>Vessel Type Classification using Underwater Acoustic Data</h2>
+            <span class="project-type">Deep Learning Research</span>
+          </div>
+          <p class="project-subtitle">Lightweight CNN for Underwater Acoustic Signal Processing</p>
+          
+          <div class="project-content">
+            <div class="project-description">
+              <h4>Overview</h4>
+              <p>Developed and implemented a novel lightweight convolutional neural network for precise classification of underwater vessels using acoustic data, achieving state-of-the-art performance while maintaining computational efficiency.</p>
+              
+              <h4>Key Contributions</h4>
+              <ul>
+                <li>Designed custom CNN architecture optimized for acoustic signal processing</li>
+                <li>Achieved 93.53% accuracy on VTUAD dataset</li>
+                <li>Optimized model size to 19.5 MB for deployment efficiency</li>
+                <li>Outperformed established CNN architectures in benchmark comparisons</li>
+                <li>Implemented robust preprocessing pipeline for underwater acoustic data</li>
+              </ul>
+
+              <h4>Technologies Used</h4>
+              <div class="tech-stack">
+                <span class="tech-tag large">PyTorch</span>
+                <span class="tech-tag large">Python</span>
+                <span class="tech-tag large">Signal Processing</span>
+                <span class="tech-tag large">CNN</span>
+                <span class="tech-tag large">Acoustic Analysis</span>
+              </div>
+
+              <div class="performance-metrics">
+                <div class="metric">
+                  <span class="metric-value">93.53%</span>
+                  <span class="metric-label">Accuracy</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">19.5 MB</span>
+                  <span class="metric-label">Model Size</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">VTUAD</span>
+                  <span class="metric-label">Dataset</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-detail">
+          <div class="project-header">
+            <h2>Hand Gesture Recognition in Complex Backgrounds</h2>
+            <span class="project-type">Edge AI System</span>
+          </div>
+          <p class="project-subtitle">High Resolution Thermal Imaging with Deep CNN</p>
+          
+          <div class="project-content">
+            <div class="project-description">
+              <h4>Overview</h4>
+              <p>Developed an innovative end-to-end edge computing system utilizing high-resolution infrared camera for precise hand gesture recognition in challenging environmental conditions, demonstrating superior performance in low-light settings and complex backgrounds.</p>
+              
+              <h4>Key Contributions</h4>
+              <ul>
+                <li>Built complete edge computing pipeline for real-time gesture recognition</li>
+                <li>Achieved 99.79% accuracy across diverse environmental conditions</li>
+                <li>Implemented robust background invariance using thermal imaging</li>
+                <li>Optimized for low-light and variable lighting conditions</li>
+                <li>Designed efficient CNN architecture for edge deployment</li>
+              </ul>
+
+              <h4>Technologies Used</h4>
+              <div class="tech-stack">
+                <span class="tech-tag large">Thermal Imaging</span>
+                <span class="tech-tag large">PyTorch</span>
+                <span class="tech-tag large">Edge Computing</span>
+                <span class="tech-tag large">Computer Vision</span>
+                <span class="tech-tag large">CNN</span>
+              </div>
+
+              <div class="performance-metrics">
+                <div class="metric">
+                  <span class="metric-value">99.79%</span>
+                  <span class="metric-label">Accuracy</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">Real-time</span>
+                  <span class="metric-label">Processing</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">Thermal</span>
+                  <span class="metric-label">Imaging</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year2"></span> Sai sree Nathala — <a href="mailto:nathala2003@gmail.com">nathala2003@gmail.com</a></p>
+      <div class="footer-content">
+        <p>© <span id="year"></span> Sai sree Nathala — Research Projects</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="mailto:nathala2003@gmail.com">Contact</a>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <script>document.getElementById('year2').innerText = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
 </body>
 </html>
