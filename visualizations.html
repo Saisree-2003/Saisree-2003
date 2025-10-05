@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Data Science Visualizations — Sai sree Nathala</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="Data science projects and visualizations: R&D expenditure analysis in India using Python, pandas, and matplotlib." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Data Science</h1>
+        <p class="muted">Analysis & Visualizations</p>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="visualizations.html" class="active">Data Science</a>
+        <a href="Sai_sree_resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Project Overview -->
+    <section class="card">
+      <h2>R&D Expenditure Analysis in India (2005-2010)</h2>
+      <div class="project-info">
+        <div class="info-grid">
+          <div class="info-item">
+            <h4>Dataset</h4>
+            <p>R&D Statistics 2011-12, Table 17</p>
+          </div>
+          <div class="info-item">
+            <h4>Source</h4>
+            <p>data.gov.in</p>
+          </div>
+          <div class="info-item">
+            <h4>Time Period</h4>
+            <p>2005-06 to 2009-10</p>
+          </div>
+          <div class="info-item">
+            <h4>Tools Used</h4>
+            <p>Python, Pandas, Matplotlib, Seaborn</p>
+          </div>
+        </div>
+        
+        <div class="analysis-description">
+          <h4>Project Overview</h4>
+          <p>Comprehensive analysis of Research & Development expenditure patterns across different economic sectors in India. This project demonstrates data cleaning, exploratory data analysis, and visualization skills using Python's data science ecosystem.</p>
+          
+          <h4>Key Insights</h4>
+          <ul>
+            <li>Public Administration & Defence shows the highest R&D expenditure</li>
+            <li>Consistent year-over-year growth in overall R&D spending</li>
+            <li>Significant variation in R&D investment across sectors</li>
+            <li>Highest growth observed between 2007-08 and 2008-09</li>
+          </ul>
+
+          <div class="github-link">
+            <a href="https://github.com/yourusername/R-D-Expenditure-Analysis-India" class="btn primary" target="_blank">
+              📁 View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visualizations -->
+    <section class="card">
+      <h2>Data Visualizations</h2>
+      
+      <!-- Plot 1 -->
+      <div class="visualization-item">
+        <div class="viz-header">
+          <h3>Total R&D Expenditure Trend by Sector</h3>
+          <span class="viz-type">Line Plot</span>
+        </div>
+        <div class="viz-content">
+          <div class="viz-image">
+            <img src="plots/line_plot_rd_trend.png" alt="R&D Expenditure Trends by Sector" />
+          </div>
+          <div class="viz-description">
+            <h4>Insights</h4>
+            <p>Shows the year-wise R&D expenditure trends across four main economic sectors. All sectors demonstrate consistent upward trends, with Public Administration maintaining the highest expenditure throughout the period.</p>
+            <ul>
+              <li>Public Administration leads in R&D investment</li>
+              <li>Consistent growth across all sectors</li>
+              <li>Agriculture sector shows steady increase</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plot 2 -->
+      <div class="visualization-item">
+        <div class="viz-header">
+          <h3>Average R&D Expenditure by Sector</h3>
+          <span class="viz-type">Bar Plot</span>
+        </div>
+        <div class="viz-content">
+          <div class="viz-image">
+            <img src="plots/bar_plot_avg_expenditure.png" alt="Average R&D Expenditure by Sector" />
+          </div>
+          <div class="viz-description">
+            <h4>Insights</h4>
+            <p>Comparative analysis of average R&D expenditure across sectors, highlighting significant disparities in investment levels and sectoral priorities.</p>
+            <ul>
+              <li>Clear hierarchy in sectoral R&D investment</li>
+              <li>Public sector dominates R&D landscape</li>
+              <li>Manufacturing shows moderate investment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plot 3 -->
+      <div class="visualization-item">
+        <div class="viz-header">
+          <h3>R&D Expenditure Growth: Top 10 Sub-sectors</h3>
+          <span class="viz-type">Multi-line Plot</span>
+        </div>
+        <div class="viz-content">
+          <div class="viz-image">
+            <img src="plots/line_plot_growth_top_subsectors.png" alt="Top Sub-sectors Growth Trends" />
+          </div>
+          <div class="viz-description">
+            <h4>Insights</h4>
+            <p>Tracks expenditure patterns of the top-performing sub-sectors, revealing varying growth trajectories and identifying high-growth areas within each main sector.</p>
+            <ul>
+              <li>Diverse growth patterns across sub-sectors</li>
+              <li>Some sub-sectors show exponential growth</li>
+              <li>Varying investment strategies visible</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plot 4 -->
+      <div class="visualization-item">
+        <div class="viz-header">
+          <h3>Sector-wise Distribution of Total R&D Expenditure</h3>
+          <span class="viz-type">Pie Chart</span>
+        </div>
+        <div class="viz-content">
+          <div class="viz-image">
+            <img src="plots/pie_chart_sector_distribution.png" alt="Sector Distribution Pie Chart" />
+          </div>
+          <div class="viz-description">
+            <h4>Insights</h4>
+            <p>Visual representation of sectoral share in total R&D expenditure, clearly showing the dominance of Public Administration in India's R&D landscape.</p>
+            <ul>
+              <li>Public Administration: Largest share</li>
+              <li>Balanced distribution among other sectors</li>
+              <li>Clear sectoral priorities visible</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plot 5 -->
+      <div class="visualization-item">
+        <div class="viz-header">
+          <h3>Overall R&D Growth Trends and Rates</h3>
+          <span class="viz-type">Combined Plot</span>
+        </div>
+        <div class="viz-content">
+          <div class="viz-image">
+            <img src="plots/growth_trends.png" alt="Growth Trends and Rates" />
+          </div>
+          <div class="viz-description">
+            <h4>Insights</h4>
+            <p>Combined view showing both absolute expenditure values and year-over-year growth rates, identifying periods of accelerated growth and overall momentum.</p>
+            <ul>
+              <li>Consistent positive growth across years</li>
+              <li>Peak growth in 2007-08 to 2008-09 period</li>
+              <li>Stable growth momentum maintained</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Details -->
+    <section class="card">
+      <h2>Technical Implementation</h2>
+      <div class="technical-details">
+        <div class="code-section">
+          <h4>Methodology</h4>
+          <ul>
+            <li><strong>Data Cleaning:</strong> Handled missing values, filtered summary rows</li>
+            <li><strong>Exploratory Analysis:</strong> Statistical summaries, trend analysis</li>
+            <li><strong>Visualization:</strong> Multiple plot types for comprehensive insights</li>
+            <li><strong>Growth Analysis:</strong> Year-over-year growth rate calculations</li>
+          </ul>
+        </div>
+        
+        <div class="code-section">
+          <h4>Python Libraries Used</h4>
+          <div class="library-grid">
+            <span class="library-tag">pandas</span>
+            <span class="library-tag">matplotlib</span>
+            <span class="library-tag">seaborn</span>
+            <span class="library-tag">numpy</span>
+            <span class="library-tag">jupyter</span>
+          </div>
+        </div>
+
+        <div class="code-section">
+          <h4>Key Analysis Features</h4>
+          <div class="features-grid">
+            <div class="feature-item">
+              <h5>📊 Data Processing</h5>
+              <p>Automated data cleaning and preprocessing pipeline</p>
+            </div>
+            <div class="feature-item">
+              <h5>📈 Trend Analysis</h5>
+              <p>Multi-year growth pattern identification</p>
+            </div>
+            <div class="feature-item">
+              <h5>🔍 Sector Comparison</h5>
+              <p>Cross-sectoral investment comparison</p>
+            </div>
+            <div class="feature-item">
+              <h5>📉 Growth Metrics</h5>
+              <p>Year-over-year growth rate calculations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>© <span id="year"></span> Sai sree Nathala — Data Science Portfolio</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="mailto:nathala2003@gmail.com">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
